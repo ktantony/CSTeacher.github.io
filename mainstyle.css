@@ -1,4 +1,4 @@
-	* {
+* {
 		margin: 0;
         padding: 0;
     }
@@ -52,6 +52,7 @@
 	
 	.flex-container {
 		display: flex;
+		flex-direction: row;
 		align-items: stretch;
 		background-color: #f1f1f1;
 	}
@@ -64,6 +65,12 @@
 		line-height: 25px;
 		font-size: 15px;
 	}
+	/* Responsive layout - makes a one column layout instead of a two-column layout */
+	@media (max-width: 800px) {
+		.flex-container {
+			flex-direction: column;
+		}
+	}
 	footer {
 		background-color:rgba(10,10,10,0.3);
 		color: black;
@@ -75,6 +82,8 @@
 	
 	.flex-container-team {
 		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
 		justify-content: center;
 		background-color:rgba(200,200,200,0.3);
 	}
@@ -87,6 +96,13 @@
 		line-height: 25px;
 		font-size: 15px;
 	}
+	/* Responsive layout - makes a one column layout instead of a two-column layout */
+	@media (max-width: 800px) {
+		.flex-container-team {
+			flex-direction: column;
+		}
+	}
+	
 	h2{
 		text-align: center;
 	}
@@ -123,9 +139,34 @@
             transition: background-color 0.3s ease-in-out;
         }
  
-        .btn:hover {
-            background-color: #000;
-            /* Change the background color on hover */
-            color: #ffd700;
-        }
+    .btn:hover {
+        background-color: #000;
+        /* Change the background color on hover */
+        color: #ffd700;
+    }
+		
+	.flex-container-course {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		background-color:rgba(200,200,200,0.3);
+	}
+
+	.flex-container-course > div {
+		background-color:rgba(0,0,255,0.3);
+		width: 300px;
+		margin: 15px;
+		text-align: center;
+		line-height: 25px;
+		font-size: 15px;
+	}
+	
+	/* Responsive layout - makes a one column layout instead of a two-column layout */
+	@media (max-width: 800px) {
+		.flex-container-course {
+			flex-direction: column;
+		}
+	}
+	
 	
