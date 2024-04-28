@@ -1,0 +1,131 @@
+	* {
+		margin: 0;
+        padding: 0;
+    }
+ 
+    body {
+		font-family: 'Arial', sans-serif;
+    }
+	
+	.header1 {
+		height: 80px;
+		line-height: 80px;
+		margin: 0;
+		padding-left: 10px;
+		background: #e0e0e0;
+		color: #292929;
+	}
+	.navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+            background-color:rgba(0,0,255,0.3);
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+	.nav-list {
+            display: flex;
+            list-style: none;
+        }
+	.nav-list li {
+            margin-right: 20px;
+        }
+ 
+    .nav-list li:last-child {
+            margin-right: 0;
+        }
+ 
+    .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+    }
+ 
+    .nav-list li a:hover {
+            color: #ffd700;
+            /* Change the color on hover */
+    }
+	
+	.flex-container {
+		display: flex;
+		align-items: stretch;
+		background-color: #f1f1f1;
+	}
+
+	.flex-container > div {
+		background-color:rgba(200,200,200,0.3);
+		color: black;
+		margin: 10px;
+		text-align: center;
+		line-height: 25px;
+		font-size: 15px;
+	}
+	footer {
+		background-color:rgba(10,10,10,0.3);
+		color: black;
+		margin: 10px;
+		text-align: right;
+		line-height: 25px;
+		font-size: 15px;
+	}
+	
+	.flex-container-team {
+		display: flex;
+		justify-content: center;
+		background-color:rgba(200,200,200,0.3);
+	}
+
+	.flex-container-team > div {
+		background-color:rgba(0,0,255,0.3);
+		width: 200px;
+		margin: 10px;
+		text-align: center;
+		line-height: 25px;
+		font-size: 15px;
+	}
+	h2{
+		text-align: center;
+	}
+	.imgteam {
+            float: left;
+            margin: 5px;
+        }
+ 
+    .pteam {
+            text-align: justify;
+            font-size: 15px;
+        }
+		
+	.apply {
+		color: black;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+	}
+   .formapply {
+	   background-color:rgba(200,200,200,0.3);
+		color: black;
+		margin: 50px;
+		text-align: rleft;
+		line-height: 30px;
+		font-size: 15px;
+	}
+	.btn {
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+ 
+        .btn:hover {
+            background-color: #000;
+            /* Change the background color on hover */
+            color: #ffd700;
+        }
+	
